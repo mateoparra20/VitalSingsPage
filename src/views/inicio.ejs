@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="shortcut icon" href="http://www.clker.com/cliparts/z/B/m/d/s/S/ekg-signal-hi.png" type="image/x-icon">
+    <%- include('./partials/head'); %>
+</head>
+<body class="home">
+    <div class="container mt-3">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;"> 
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/profile"><strong><span class="fa fa-user"></span> Usuario: </strong> <%= user.local.nombre %> <%= user.local.lastname %></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li>
+                        <img src="https://monebo.com/wp-content/uploads/2019/08/output_6U72fa.gif" alt="" width="50" height="40">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/signos">Signos Vitales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/settings">Configuraciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/logout">Salir</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <hr>
+        <div class="container">
+            <div class="card text-center mt-2 border-dark" style="border-width: 10px; background-color: #e3f2fd;">
+                <div class="card-body">
+                    <h1> 
+                        <span class="fas fa-atom"></span> Bienvenido <%= user.local.nombre %> </h1> 
+                </div>
+            </div>
+        </div>
+        <div class="container mt-3 mb-3">
+            <div class="card border-dark" style="border-width: 10px; background-color: #e3f2fd;">
+                <div class="card-header text-center">
+                    <h3 class="card-title">
+                        <span class="fa fa-user-graduate"></span> Un poco sobre nosotros
+                    </h3>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-6">
+                            <div class="card text-center mt-3 mb-3" style="background-color: #e3f2fd;">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-2"><span class="fas fa-file-code"></span> Mateo Parra Posse</h5>
+                                    <img src="/img/mateo.jpg" class="imgRedonda" alt="Mateo">     
+                                    <h6 class="mt-3">
+                                        Estudiante de décimo semestre de la facultad de Ingeniería Electrónica de la Universidad Santo Tomás
+                                        y soy el puto amo de esa facultad y todos me maman la verga :3 perros hijueputas
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card text-center mt-3 mb-3" style="background-color: #e3f2fd;">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-2"><span class="fas fa-laptop-code"></span> Sergio Andrés Lagos Fuquen</h5>
+                                    <img src="/img/sergio.jpeg" class="imgRedonda" alt="Sergio">  
+                                    <h6 class="mt-3">
+                                        Estudiante de décimo semestre de la facultad de Ingeniería Electrónica de la Universidad Santo Tomás
+                                        y es mi compañero que también es la re verga :3 
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container mt-3 mb-3">
+            <div class="card border-dark" style="border-width: 10px; background-color: #e3f2fd;">
+                <div class="card-header text-center">
+                    <h3 class="card-title">
+                        <span class="fa fa-book-alt"></span> Acerca del proyecto
+                    </h3>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-6 text-center mt-3 mb-3">
+                            <img src="/img/pic24f.png" alt="brazalete" class="img-thumbnail">
+                        </div>
+                        <div class="col-6">
+                            <div class="card text-center mt-3 mb-3" style="background-color: #e3f2fd;">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-2"><span class="fas fa-hand-holding-heart"></span> Nombre del Brazalete</h5>
+                                    <h6 class="mt-3">
+                                        Acá vamos a hablar pura monda del proyecto y del brazalete para que se vea chimba 
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <hr>
+    <div class="container">
+        <footer class="card text-center mt-3 mb-3 border-dark" style="border-width: 10px; background-color: #e3f2fd;">
+            <h5 class="card-title text-center mt-2"> Contáctanos si tienes algún incoveniente</h5>
+            <p>
+                <span class="fa fa-user"></span> Mateo Parra Posse / 
+                <span class="fas fa-envelope-open-text"></span> posse1512@gmail.com /
+                <span class="fas fa-phone"></span> (+57) 300 7636582
+            </p>
+            <p>
+                <span class="fa fa-user"></span> Sergio Lagos Fuquen / 
+                <span class="fas fa-envelope-open-text"></span> slagos1999@live.com /
+                <span class="fas fa-phone"></span> (+57) 301 3655421
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

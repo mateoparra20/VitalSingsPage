@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vital Sings</title>
+    <link rel="shortcut icon" href="http://www.clker.com/cliparts/z/B/m/d/s/S/ekg-signal-hi.png" type="image/x-icon">
+    <%- include('./partials/head'); %>
+</head>
+<body class="home">
+    <div class="container">
+        <div class="card text-center mt-5 border-dark" style="border-width: 10px; background-color: #e3f2fd;">
+            <div class="card-body">
+                <h1> Bienvenido a tu página favorita para monitorear tus signos vitales</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-evenly">
+            <div class="col-4">
+                <div class="card text-center mt-5 border-dark" style="border-width: 10px;background-color: #e3f2fd;">
+                    <div class="card-body">
+                        <h5 class="card-title mb-4">Elige entre las siguientes opciones:</h5>
+                        <h6>
+                            ¿Ya tienes una cuenta? 
+                            <a href="/login" class="btn btn-dark ms-2"><span class="fa fa-user"></span> Ingresa</a>
+                        </h6>
+                        <h6>
+                            ¿Eres un nuevo usuario?
+                            <a href="/signup" class="btn btn-dark ms-1"><span class="fa fa-user"></span> Regístrate</a>
+                        </h6>     
+                        <img src="/img/Logo_Facultad.png" class="resize">     
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card mt-5 border-dark" style="border-width: 10px; background-color: #e3f2fd;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center mb-3"><span class="fas fa-user-friends"></span> Un poco sobre nosotros</h5>
+                        <h6>
+                            Querido usuario, está página está desarollada por estudiantes de la facultad de Ingeniería Electrónica de la Universidad Santo Tomás
+                            como parte fundamental de su proyecto de grado.
+                        </h6>
+                        <h5 class="card-title text-center mt-3 mb-3"><span class="fas fa-laptop-code"></span> Finalidad de la página</h5>
+                        <h6>
+                            La página está diseñada para ver de forma de remota los signos vitales tomados por tu brazalete, con el fin de que tú puedas
+                            controlar y revisar tu salud frecuentemente. Cualquier inconveniente no dudes en contactarnos
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <footer class="card text-center mt-5 mb-5 border-dark" style="border-width: 10px; background-color: #e3f2fd;">
+            <h5 class="card-title text-center mt-2"> Contáctanos si tienes algún incoveniente</h5>
+            <p>
+                <span class="fa fa-user"></span> Mateo Parra Posse / 
+                <span class="fas fa-envelope-open-text"></span> posse1512@gmail.com /
+                <span class="fas fa-phone"></span> (+57) 300 7636582
+            </p>
+            <p>
+                <span class="fa fa-user"></span> Sergio Lagos Fuquen / 
+                <span class="fas fa-envelope-open-text"></span> slagos1999@live.com /
+                <span class="fas fa-phone"></span> (+57) 301 3655421
+            </p>
+        </footer>
+    </div>
+
+</body>
+</html>

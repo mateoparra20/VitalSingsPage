@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signos</title>
+    <link rel="shortcut icon" href="http://www.clker.com/cliparts/z/B/m/d/s/S/ekg-signal-hi.png" type="image/x-icon">
+    <%- include('./partials/head'); %>
+</head>
+<body class="home">
+  <div class="container mt-3">
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;"> 
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/profile"><strong><span class="fa fa-user"></span> Usuario: </strong> <%= user.local.nombre %> <%= user.local.lastname %></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li>
+                      <img src="https://monebo.com/wp-content/uploads/2019/08/output_6U72fa.gif" alt="" width="50" height="40">
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="/inicio">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="/signos">Signos Vitales</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="/settings">Configuraciones</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="/logout">Salir</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+      </nav>
+      <hr>
+      <div class="container">
+          <div class="card text-center mt-2 border-dark" style="border-width: 10px; background-color: #e3f2fd;">
+              <div class="card-body">
+                  <h1> 
+                      <span class="far fa-heartbeat"></span> Revisa tu salud </h1>
+              </div>
+          </div>
+      </div>
+      <table class="table text-center table-bordered mt-4" style="border-width: 5px;">
+          <thead>
+            <tr class="table-info"> 
+              <th scope="col">Registro</th>
+              <th scope="col">Día de registro</th>
+              <th scope="col">Frecuencia Cardiaca</th>
+              <th scope="col">Presión Arterial</th>
+              <th scope="col">Temperatura Corporal</th>
+              <th scope="col">Oxigenación en la Sangre</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-light">
+              <th scope="row">1</th>
+              <td>Fecha</td>
+              <td>Dato</td>
+              <td>Dato</td>
+              <td>Dato</td>
+              <td>Dato</td>
+            </tr>
+            <tr class="table-light">
+              <th scope="row">2</th>
+              <td>Fecha</td>
+              <td>Dato</td>
+              <td>Dato</td>
+              <td>Dato</td>
+              <td>Dato</td>
+            </tr>
+          </tbody>
+      </table>
+  </div>
+  <hr>
+  <div class="container">
+      <footer class="card text-center mt-3 mb-3 border-dark" style="border-width: 10px; background-color: #e3f2fd;">
+          <h5 class="card-title text-center mt-2"> Contáctanos si tienes algún incoveniente</h5>
+          <p>
+              <span class="fa fa-user"></span> Mateo Parra Posse / 
+              <span class="fas fa-envelope-open-text"></span> posse1512@gmail.com /
+              <span class="fas fa-phone"></span> (+57) 300 7636582
+          </p>
+          <p>
+              <span class="fa fa-user"></span> Sergio Lagos Fuquen / 
+              <span class="fas fa-envelope-open-text"></span> slagos1999@live.com /
+              <span class="fas fa-phone"></span> (+57) 301 3655421
+          </p>
+      </footer>
+  </div>
+</body>
+</html>
